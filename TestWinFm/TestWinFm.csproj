@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +80,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\C2.gif" />
+    <Content Include="Resources\C3.gif" />
+    <Content Include="Resources\C4.gif" />
+    <Content Include="Resources\C5.gif" />
+    <Content Include="Resources\C6.gif" />
+    <Content Include="Resources\C7.gif" />
+    <Content Include="Resources\C8.gif" />
+    <Content Include="Resources\C9.gif" />
+    <Content Include="Resources\CA.gif" />
+    <Content Include="Resources\CJ.gif" />
+    <Content Include="Resources\CK.gif" />
+    <Content Include="Resources\CQ.gif" />
+    <Content Include="Resources\CT.gif" />
+    <Content Include="Resources\D2.gif" />
+    <Content Include="Resources\D3.gif" />
+    <Content Include="Resources\D4.gif" />
+    <Content Include="Resources\D5.gif" />
+    <Content Include="Resources\D6.gif" />
+    <Content Include="Resources\D7.gif" />
+    <Content Include="Resources\D8.gif" />
+    <Content Include="Resources\D9.gif" />
+    <Content Include="Resources\DA.gif" />
+    <Content Include="Resources\DJ.gif" />
+    <Content Include="Resources\DK.gif" />
+    <Content Include="Resources\DQ.gif" />
+    <Content Include="Resources\DT.gif" />
+    <Content Include="Resources\H2.gif" />
+    <Content Include="Resources\H3.gif" />
+    <Content Include="Resources\H4.gif" />
+    <Content Include="Resources\H5.gif" />
+    <Content Include="Resources\H6.gif" />
+    <Content Include="Resources\H7.gif" />
+    <Content Include="Resources\H8.gif" />
+    <Content Include="Resources\H9.gif" />
+    <Content Include="Resources\HA.gif" />
+    <Content Include="Resources\HJ.gif" />
+    <Content Include="Resources\HK.gif" />
+    <Content Include="Resources\HQ.gif" />
+    <Content Include="Resources\HT.gif" />
+    <Content Include="Resources\OO.gif" />
+    <None Include="Resources\OO1.gif" />
+    <Content Include="Resources\S2.gif" />
+    <Content Include="Resources\S3.gif" />
+    <Content Include="Resources\S4.gif" />
+    <Content Include="Resources\S5.gif" />
+    <Content Include="Resources\S6.gif" />
+    <Content Include="Resources\S7.gif" />
+    <Content Include="Resources\S8.gif" />
+    <Content Include="Resources\S9.gif" />
+    <Content Include="Resources\SA.gif" />
+    <Content Include="Resources\SJ.gif" />
+    <Content Include="Resources\SK.gif" />
+    <Content Include="Resources\SQ.gif" />
+    <Content Include="Resources\ST.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
