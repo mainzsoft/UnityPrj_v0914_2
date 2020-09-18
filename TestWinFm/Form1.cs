@@ -19,8 +19,11 @@ namespace TestWinFm
     {
 
         // -----------------------------------------------------------------------------------------------------
-        public ClsCard myCard = new ClsCard();  
+        public ClsCard     myCard = new ClsCard();
+        public ClsCardRank myRank = new ClsCardRank();
 
+
+        // 카드이미지 매핑
         public void MappingCardImg(PictureBox mappingPicBox, string strParam)
         {
             Bitmap ObjCardImg = new Bitmap(Properties.Resources.SA);            
@@ -102,34 +105,30 @@ namespace TestWinFm
             
         }
 
+
+
+        // 카드섞기
         private void button1_Click(object sender, EventArgs e)
         {
-            myCard.suff();
+            myCard.Suff();
             myCard.CardMapping(DellerTx);
 
             MappingCardImg(UserCardImg11, "OO");
             MappingCardImg(UserCardImg12, "OO");
-
             MappingCardImg(UserCardImg21, "OO");
             MappingCardImg(UserCardImg22, "OO");
             MappingCardImg(UserCardImg31, "OO");
             MappingCardImg(UserCardImg32, "OO");
-
             MappingCardImg(UserCardImg41, "OO");
             MappingCardImg(UserCardImg42, "OO");
-
             MappingCardImg(UserCardImg51, "OO");
             MappingCardImg(UserCardImg52, "OO");
-
             MappingCardImg(UserCardImg61, "OO");
             MappingCardImg(UserCardImg62, "OO");
-
             MappingCardImg(UserCardImg71, "OO");
             MappingCardImg(UserCardImg72, "OO");
-
             MappingCardImg(UserCardImg81, "OO");
             MappingCardImg(UserCardImg82, "OO");
-
             MappingCardImg(UserCardImg91, "OO");
             MappingCardImg(UserCardImg92, "OO");
 
@@ -140,11 +139,14 @@ namespace TestWinFm
             MappingCardImg(CommCard5, "OO");
         }
 
-
+        // 플레이어 핸드
         private void button2_Click(object sender, EventArgs e)
         {
-            MappingCardImg(UserCardImg11, myCard.GetCard("Player11"));
-            MappingCardImg(UserCardImg12, myCard.GetCard("Player12"));
+            //MappingCardImg(UserCardImg11, myCard.GetCard("Player11"));
+            //MappingCardImg(UserCardImg12, myCard.GetCard("Player12"));
+
+            MappingCardImg(UserCardImg11, myCard.PlayerHand(1, 1));
+            MappingCardImg(UserCardImg12, myCard.PlayerHand(1, 2));
 
             MappingCardImg(UserCardImg21, myCard.GetCard("Player21"));
             MappingCardImg(UserCardImg22, myCard.GetCard("Player22"));
@@ -171,21 +173,29 @@ namespace TestWinFm
             MappingCardImg(UserCardImg92, myCard.GetCard("Player92"));
         }
 
+        // 커뮤니티 플럽
         private void button3_Click(object sender, EventArgs e)
         {
-            MappingCardImg(CommCard1, myCard.GetCard("Comm1"));
-            MappingCardImg(CommCard2, myCard.GetCard("Comm2"));
-            MappingCardImg(CommCard3, myCard.GetCard("Comm3"));            
+            MappingCardImg(CommCard1, myCard.CommunityFlop(1));
+            MappingCardImg(CommCard2, myCard.CommunityFlop(2));
+            MappingCardImg(CommCard3, myCard.CommunityFlop(3));            
         }
 
+        // 커뮤니티 턴
         private void button4_Click(object sender, EventArgs e)
         {
-            MappingCardImg(CommCard4, myCard.GetCard("Comm4"));
+            MappingCardImg(CommCard4, myCard.CommunityTurn());
         }
 
+        // 커뮤니티 리버
         private void button5_Click(object sender, EventArgs e)
         {
-            MappingCardImg(CommCard5, myCard.GetCard("Comm5"));
+            MappingCardImg(CommCard5, myCard.CommunityRiver());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = 
         }
     }
 

@@ -79,6 +79,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.UserCardImg11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserCardImg12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserCardImg22)).BeginInit();
@@ -152,7 +153,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(22, 276);
+            this.label1.Location = new System.Drawing.Point(34, 314);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 32);
             this.label1.TabIndex = 5;
@@ -162,7 +163,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(160, 276);
+            this.label2.Location = new System.Drawing.Point(160, 314);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 32);
             this.label2.TabIndex = 6;
@@ -172,7 +173,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(295, 276);
+            this.label3.Location = new System.Drawing.Point(285, 314);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 32);
             this.label3.TabIndex = 7;
@@ -182,7 +183,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(429, 276);
+            this.label4.Location = new System.Drawing.Point(414, 314);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 32);
             this.label4.TabIndex = 8;
@@ -192,7 +193,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(561, 276);
+            this.label5.Location = new System.Drawing.Point(540, 314);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 32);
             this.label5.TabIndex = 9;
@@ -202,7 +203,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(692, 276);
+            this.label6.Location = new System.Drawing.Point(665, 314);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 32);
             this.label6.TabIndex = 10;
@@ -212,7 +213,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(828, 276);
+            this.label7.Location = new System.Drawing.Point(793, 314);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 32);
             this.label7.TabIndex = 11;
@@ -222,7 +223,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.Location = new System.Drawing.Point(961, 276);
+            this.label8.Location = new System.Drawing.Point(921, 314);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 32);
             this.label8.TabIndex = 12;
@@ -232,7 +233,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("굴림", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(1092, 276);
+            this.label9.Location = new System.Drawing.Point(1052, 314);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 32);
             this.label9.TabIndex = 13;
@@ -240,72 +241,72 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 311);
+            this.textBox1.Location = new System.Drawing.Point(27, 349);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 21);
+            this.textBox1.Size = new System.Drawing.Size(109, 21);
             this.textBox1.TabIndex = 14;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(149, 311);
+            this.textBox2.Location = new System.Drawing.Point(153, 349);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(127, 21);
+            this.textBox2.Size = new System.Drawing.Size(109, 21);
             this.textBox2.TabIndex = 15;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(282, 311);
+            this.textBox3.Location = new System.Drawing.Point(282, 349);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 21);
+            this.textBox3.Size = new System.Drawing.Size(105, 21);
             this.textBox3.TabIndex = 16;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(415, 311);
+            this.textBox4.Location = new System.Drawing.Point(406, 349);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 21);
+            this.textBox4.Size = new System.Drawing.Size(110, 21);
             this.textBox4.TabIndex = 17;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(548, 311);
+            this.textBox5.Location = new System.Drawing.Point(536, 349);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 21);
+            this.textBox5.Size = new System.Drawing.Size(106, 21);
             this.textBox5.TabIndex = 18;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(681, 311);
+            this.textBox6.Location = new System.Drawing.Point(658, 349);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(127, 21);
+            this.textBox6.Size = new System.Drawing.Size(109, 21);
             this.textBox6.TabIndex = 19;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(814, 311);
+            this.textBox7.Location = new System.Drawing.Point(786, 349);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(127, 21);
+            this.textBox7.Size = new System.Drawing.Size(109, 21);
             this.textBox7.TabIndex = 20;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(947, 311);
+            this.textBox8.Location = new System.Drawing.Point(914, 349);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(127, 21);
+            this.textBox8.Size = new System.Drawing.Size(109, 21);
             this.textBox8.TabIndex = 21;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(1078, 311);
+            this.textBox9.Location = new System.Drawing.Point(1045, 349);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(127, 21);
+            this.textBox9.Size = new System.Drawing.Size(109, 21);
             this.textBox9.TabIndex = 22;
             // 
             // UserCardImg11
             // 
             this.UserCardImg11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg11.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg11.Image")));
-            this.UserCardImg11.Location = new System.Drawing.Point(27, 351);
+            this.UserCardImg11.Location = new System.Drawing.Point(27, 389);
             this.UserCardImg11.Name = "UserCardImg11";
             this.UserCardImg11.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -316,7 +317,7 @@
             // 
             this.UserCardImg12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg12.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg12.Image")));
-            this.UserCardImg12.Location = new System.Drawing.Point(50, 351);
+            this.UserCardImg12.Location = new System.Drawing.Point(50, 389);
             this.UserCardImg12.Name = "UserCardImg12";
             this.UserCardImg12.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -327,7 +328,7 @@
             // 
             this.UserCardImg22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg22.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg22.Image")));
-            this.UserCardImg22.Location = new System.Drawing.Point(176, 351);
+            this.UserCardImg22.Location = new System.Drawing.Point(176, 389);
             this.UserCardImg22.Name = "UserCardImg22";
             this.UserCardImg22.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -338,7 +339,7 @@
             // 
             this.UserCardImg21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg21.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg21.Image")));
-            this.UserCardImg21.Location = new System.Drawing.Point(153, 351);
+            this.UserCardImg21.Location = new System.Drawing.Point(153, 389);
             this.UserCardImg21.Name = "UserCardImg21";
             this.UserCardImg21.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -349,7 +350,7 @@
             // 
             this.UserCardImg32.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg32.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg32.Image")));
-            this.UserCardImg32.Location = new System.Drawing.Point(301, 351);
+            this.UserCardImg32.Location = new System.Drawing.Point(301, 389);
             this.UserCardImg32.Name = "UserCardImg32";
             this.UserCardImg32.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -360,7 +361,7 @@
             // 
             this.UserCardImg31.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg31.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg31.Image")));
-            this.UserCardImg31.Location = new System.Drawing.Point(278, 351);
+            this.UserCardImg31.Location = new System.Drawing.Point(278, 389);
             this.UserCardImg31.Name = "UserCardImg31";
             this.UserCardImg31.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -371,7 +372,7 @@
             // 
             this.UserCardImg42.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg42.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg42.Image")));
-            this.UserCardImg42.Location = new System.Drawing.Point(429, 351);
+            this.UserCardImg42.Location = new System.Drawing.Point(429, 389);
             this.UserCardImg42.Name = "UserCardImg42";
             this.UserCardImg42.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -382,7 +383,7 @@
             // 
             this.UserCardImg41.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg41.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg41.Image")));
-            this.UserCardImg41.Location = new System.Drawing.Point(406, 351);
+            this.UserCardImg41.Location = new System.Drawing.Point(406, 389);
             this.UserCardImg41.Name = "UserCardImg41";
             this.UserCardImg41.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -393,7 +394,7 @@
             // 
             this.UserCardImg52.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg52.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg52.Image")));
-            this.UserCardImg52.Location = new System.Drawing.Point(556, 351);
+            this.UserCardImg52.Location = new System.Drawing.Point(556, 389);
             this.UserCardImg52.Name = "UserCardImg52";
             this.UserCardImg52.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -404,7 +405,7 @@
             // 
             this.UserCardImg51.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg51.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg51.Image")));
-            this.UserCardImg51.Location = new System.Drawing.Point(533, 351);
+            this.UserCardImg51.Location = new System.Drawing.Point(533, 389);
             this.UserCardImg51.Name = "UserCardImg51";
             this.UserCardImg51.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -415,7 +416,7 @@
             // 
             this.UserCardImg62.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg62.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg62.Image")));
-            this.UserCardImg62.Location = new System.Drawing.Point(681, 351);
+            this.UserCardImg62.Location = new System.Drawing.Point(681, 389);
             this.UserCardImg62.Name = "UserCardImg62";
             this.UserCardImg62.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -426,7 +427,7 @@
             // 
             this.UserCardImg61.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg61.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg61.Image")));
-            this.UserCardImg61.Location = new System.Drawing.Point(658, 351);
+            this.UserCardImg61.Location = new System.Drawing.Point(658, 389);
             this.UserCardImg61.Name = "UserCardImg61";
             this.UserCardImg61.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -437,7 +438,7 @@
             // 
             this.UserCardImg72.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg72.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg72.Image")));
-            this.UserCardImg72.Location = new System.Drawing.Point(809, 351);
+            this.UserCardImg72.Location = new System.Drawing.Point(809, 389);
             this.UserCardImg72.Name = "UserCardImg72";
             this.UserCardImg72.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -448,7 +449,7 @@
             // 
             this.UserCardImg71.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg71.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg71.Image")));
-            this.UserCardImg71.Location = new System.Drawing.Point(786, 351);
+            this.UserCardImg71.Location = new System.Drawing.Point(786, 389);
             this.UserCardImg71.Name = "UserCardImg71";
             this.UserCardImg71.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -459,7 +460,7 @@
             // 
             this.UserCardImg82.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg82.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg82.Image")));
-            this.UserCardImg82.Location = new System.Drawing.Point(937, 351);
+            this.UserCardImg82.Location = new System.Drawing.Point(937, 389);
             this.UserCardImg82.Name = "UserCardImg82";
             this.UserCardImg82.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -470,7 +471,7 @@
             // 
             this.UserCardImg81.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg81.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg81.Image")));
-            this.UserCardImg81.Location = new System.Drawing.Point(914, 351);
+            this.UserCardImg81.Location = new System.Drawing.Point(914, 389);
             this.UserCardImg81.Name = "UserCardImg81";
             this.UserCardImg81.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -481,7 +482,7 @@
             // 
             this.UserCardImg92.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg92.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg92.Image")));
-            this.UserCardImg92.Location = new System.Drawing.Point(1068, 351);
+            this.UserCardImg92.Location = new System.Drawing.Point(1068, 389);
             this.UserCardImg92.Name = "UserCardImg92";
             this.UserCardImg92.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -492,7 +493,7 @@
             // 
             this.UserCardImg91.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UserCardImg91.Image = ((System.Drawing.Image)(resources.GetObject("UserCardImg91.Image")));
-            this.UserCardImg91.Location = new System.Drawing.Point(1045, 351);
+            this.UserCardImg91.Location = new System.Drawing.Point(1045, 389);
             this.UserCardImg91.Name = "UserCardImg91";
             this.UserCardImg91.Size = new System.Drawing.Size(86, 120);
             this.UserCardImg91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -594,11 +595,22 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1151, 246);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(115, 27);
+            this.button6.TabIndex = 50;
+            this.button6.Text = "정렬값구하기";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // MainFm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 554);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -733,6 +745,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
