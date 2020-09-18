@@ -23,7 +23,7 @@ namespace TestWinFm
         public ClsCardRank myRank = new ClsCardRank();
 
 
-        // 카드이미지 매핑
+        // 카드 이미지 매핑
         public void MappingCardImg(PictureBox mappingPicBox, string strParam)
         {
             Bitmap ObjCardImg = new Bitmap(Properties.Resources.SA);            
@@ -92,7 +92,35 @@ namespace TestWinFm
             mappingPicBox.Image = ObjCardImg;
         }
 
+        public void MappingPlayerRank()
+        {
+            textBox1.Text = myRank.SortCode(myCard.GetCardCode(1));
+            label1.Text = myRank.Check(textBox1.Text);
 
+            textBox2.Text = myRank.SortCode(myCard.GetCardCode(2));
+            label2.Text = myRank.Check(textBox2.Text);
+
+            textBox3.Text = myRank.SortCode(myCard.GetCardCode(3));
+            label3.Text = myRank.Check(textBox3.Text);
+
+            textBox4.Text = myRank.SortCode(myCard.GetCardCode(4));
+            label4.Text = myRank.Check(textBox4.Text);
+
+            textBox5.Text = myRank.SortCode(myCard.GetCardCode(5));
+            label5.Text = myRank.Check(textBox5.Text);
+
+            textBox6.Text = myRank.SortCode(myCard.GetCardCode(6));
+            label6.Text = myRank.Check(textBox6.Text);
+
+            textBox7.Text = myRank.SortCode(myCard.GetCardCode(7));
+            label7.Text = myRank.Check(textBox7.Text);
+
+            textBox8.Text = myRank.SortCode(myCard.GetCardCode(8));
+            label8.Text = myRank.Check(textBox8.Text);
+
+            textBox9.Text = myRank.SortCode(myCard.GetCardCode(9));
+            label9.Text = myRank.Check(textBox9.Text);
+        }
 
 
         public MainFm()
@@ -142,11 +170,8 @@ namespace TestWinFm
         // 플레이어 핸드
         private void button2_Click(object sender, EventArgs e)
         {
-            //MappingCardImg(UserCardImg11, myCard.GetCard("Player11"));
-            //MappingCardImg(UserCardImg12, myCard.GetCard("Player12"));
-
-            MappingCardImg(UserCardImg11, myCard.PlayerHand(1, 1));
-            MappingCardImg(UserCardImg12, myCard.PlayerHand(1, 2));
+            MappingCardImg(UserCardImg11, myCard.GetCardCode(1, 1));
+            MappingCardImg(UserCardImg12, myCard.GetCardCode(1, 2));
 
             MappingCardImg(UserCardImg21, myCard.GetCard("Player21"));
             MappingCardImg(UserCardImg22, myCard.GetCard("Player22"));
@@ -176,27 +201,29 @@ namespace TestWinFm
         // 커뮤니티 플럽
         private void button3_Click(object sender, EventArgs e)
         {
-            MappingCardImg(CommCard1, myCard.CommunityFlop(1));
-            MappingCardImg(CommCard2, myCard.CommunityFlop(2));
-            MappingCardImg(CommCard3, myCard.CommunityFlop(3));            
+            MappingCardImg(CommCard1, myCard.GetCardCode(1, 3));
+            MappingCardImg(CommCard2, myCard.GetCardCode(1, 4));
+            MappingCardImg(CommCard3, myCard.GetCardCode(1, 5));            
         }
 
         // 커뮤니티 턴
         private void button4_Click(object sender, EventArgs e)
         {
-            MappingCardImg(CommCard4, myCard.CommunityTurn());
+            MappingCardImg(CommCard4, myCard.GetCardCode(1, 6));
         }
 
         // 커뮤니티 리버
         private void button5_Click(object sender, EventArgs e)
         {
-            MappingCardImg(CommCard5, myCard.CommunityRiver());
+            MappingCardImg(CommCard5, myCard.GetCardCode(1, 7));
         }
 
+        // 플레이어카드 7장 소팅
         private void button6_Click(object sender, EventArgs e)
         {
-            textBox1.Text = 
+
         }
+
     }
 
 

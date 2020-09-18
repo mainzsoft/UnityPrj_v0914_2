@@ -9,14 +9,15 @@ using System.Windows.Forms;
 namespace TestWinFm
 {
 
+
     public class ClsCard
     {
-        const String DELLER_CARD    = "card";
-        const String COMMUNITY_CARD_FULP1 = "comm";
-        const String COMMUNITY_CARD_FULP2 = "comm";
-        const String COMMUNITY_CARD_FULP3 = "comm";
-        const String COMMUNITY_CARD_TURN = "comm";
-        const String COMMUNITY_CARD_RIVER = "comm";
+        const String DELLER_CARD  = "card";
+        const String COMMUNITY_CARD_FULP1 = "comm1";
+        const String COMMUNITY_CARD_FULP2 = "comm2";
+        const String COMMUNITY_CARD_FULP3 = "comm3";
+        const String COMMUNITY_CARD_TURN  = "comm4";
+        const String COMMUNITY_CARD_RIVER = "comm5";
         const String PLAYER1_CARD = "play1";
         const String PLAYER2_CARD = "play2";
         const String PLAYER3_CARD = "play3";
@@ -26,9 +27,7 @@ namespace TestWinFm
         const String PLAYER7_CARD = "play7";
         const String PLAYER8_CARD = "play8";
         const String PLAYER9_CARD = "play9";
-
-
-
+        
         private String[] Card = new String[52] {"S2","S3","S4","S5","S6","S7","S8","S9","ST","SJ","SQ","SK","SA",
                                                "H2","H3","H4","H5","H6","H7","H8","H9","HT","HJ","HQ","HK","HA",
                                                "D2","D3","D4","D5","D6","D7","D8","D9","DT","DJ","DQ","DK","DA",
@@ -52,15 +51,15 @@ namespace TestWinFm
         }
 
         // 카드값(코드)변환 (카드코드 > 카드그림숫자)
-        public string _ChangeToPic(string strParam)
+        public string _ChangeToPic(string strParams)
         {
-            string retParam = "";
-            retParam = strParam.Replace("S", "♠");  // 파라메터가 (한개)카드코드 또는 (여러개)카드코드 처리 가능함
-            retParam = retParam.Replace("H", "♥");
-            retParam = retParam.Replace("D", "◆");
-            retParam = retParam.Replace("C", "♣");
-            retParam = retParam.Replace("T", "10");
-            return retParam;
+            string retParams = "";
+            retParams = strParams.Replace("S", "♠");  // 파라메터가 (한개)카드코드 또는 (여러개)카드코드 처리 가능함
+            retParams = retParams.Replace("H", "♥");
+            retParams = retParams.Replace("D", "◆");
+            retParams = retParams.Replace("C", "♣");
+            retParams = retParams.Replace("T", "10");
+            return retParams;
 
         }
 
@@ -80,8 +79,7 @@ namespace TestWinFm
             return Int32.Parse(strParam);
         }
 
-
-
+        
 
         // 카드섞기 (섞은 이후 call distribution )  -------------------------------------------------------------
         public void Suff()
@@ -125,63 +123,66 @@ namespace TestWinFm
 
 
 
-
-        // 카드값(코드) 반환(총2장카드코드) > intParam = 플레이어번호 -------------------------------------------
-        public string PlayerHand(int iPlayerNum)
+        // 플레이어카드 CODE 총 7장 요청,반환 -------------------------------------------------------------------
+        public string GetCardCode(int iPlayerNum)
         {
-            return PlayerCard[iPlayerNum - 1, 0]+ PlayerCard[iPlayerNum - 1, 1]; 
-        }
-        // 카드값(코드) 반환(1장카드코드) > inParam 플레이어번호, iPlayerCardNum 플레이어 카드순서번호
-        public string PlayerHand(int iPlayerNum, int iPlayerCardNum)
-        {
-            return PlayerCard[iPlayerNum - 1, iPlayerCardNum - 1];
-        }
-        // 카드값(실질숫자값) 반환(1장카드숫자값) > intParam 플레이어번호, iPlayerCardNum 플레이어 카드순서번호
-        public int PlayerHandValue(int iPlayerNum, int iPlayerCardNum)
-        {
-            return _ChangeToNum(PlayerCard[iPlayerNum - 1, iPlayerCardNum - 1]);
-        }
-     
-
-
-        // 카드값(코드) 반환 > 커뮤니티(플럽 #1/3 3장) -----------------------------------------------------------
-        public string CommunityFlop()
-        {
-            return CommCard[0] + CommCard[1] + CommCard[2];
-        }
-        // 카드값(코드) 반환 > 커뮤니티(플럽순서번호에 따른 코드값 1장)
-        public string CommunityFlop(int iCommunityCardNum)
-        {
-            return CommCard[iCommunityCardNum - 1];
-        }
-        // 카드값(실질숫자값) 반환
-        public int CommunityFlopValue(int iCommunityCardNum)
-        {
-            return _ChangeToNum(CommCard[iCommunityCardNum - 1]);
+            string retStr = "";
+            retStr = PlayerCard[iPlayerNum - 1, 0]; // 플레이어 첫번째 핸드
+            retStr = retStr + PlayerCard[iPlayerNum - 1, 1]; // 플레이어 두번째 핸드
+            retStr = retStr + CommCard[0];  // 커뮤니티 플럽1/3
+            retStr = retStr + CommCard[1];  // 커뮤니티 플럽2/3            
+            retStr = retStr + CommCard[2];  // 커뮤니티 플럽3/3
+            retStr = retStr + CommCard[3];  // 커뮤니티 턴
+            retStr = retStr + CommCard[4];  // 커뮤니티 리버
+            return retStr;
         }
 
-        // 카드값(코드) 반환 > 커뮤니티(턴 #2/3 1장)
-        public string CommunityTurn()
+        // 플레이어카드 CODE 특정순서 1장 요청,반환
+        public string GetCardCode(int iPlayerNum, int iCardNum)
         {
-            return CommCard[3];
-        }
-        // 카드값(실질숫자값) 반환
-        public int CommunityTurnValue()
-        {
-            return _ChangeToNum(CommCard[3]);
+            string retStr = "";
+            if (iCardNum < 3) retStr = PlayerCard[iPlayerNum - 1, iCardNum - 1]; // 요청 카드번호가 1,2 이면 플레이어 핸드
+                         else retStr = CommCard[iCardNum - 3];                   // 요청 카드번호가 3,4,5,6,7이면 커뮤니티카드
+            return retStr;
         }
 
-        // 카드값(코드) 반환 > 커뮤니티(리버 #3/3 1장)
-        public string CommunityRiver()
+        // 플레이어카드 총 7장 요청,반환
+        public string GetCard(int iPlayerNum)
         {
-            return CommCard[4];
+            string retStr = "";
+            retStr = _ChangeToPic(PlayerCard[iPlayerNum - 1, 0]); // 플레이어 첫번째 핸드
+            retStr = retStr + _ChangeToPic(PlayerCard[iPlayerNum - 1, 1]); // 플레이어 두번째 핸드
+            retStr = retStr + _ChangeToPic(CommCard[0]);  // 커뮤니티 플럽1/3
+            retStr = retStr + _ChangeToPic(CommCard[1]);  // 커뮤니티 플럽2/3            
+            retStr = retStr + _ChangeToPic(CommCard[2]);  // 커뮤니티 플럽3/3
+            retStr = retStr + _ChangeToPic(CommCard[3]);  // 커뮤니티 턴
+            retStr = retStr + _ChangeToPic(CommCard[4]);  // 커뮤니티 리버
+            return retStr;
         }
-        // 카드값(실질숫자값) 반환
-        public int CommunityRiverValue()
+
+        // 플레이어카드 특정순서 1장 요청,반환
+        public string GetCard(int iPlayerNum, int iCardNum)
         {
-            return _ChangeToNum(CommCard[4]);
+            string retStr = "";
+            if (iCardNum < 3) retStr = _ChangeToPic(PlayerCard[iPlayerNum - 1, iCardNum - 1]); // 요청 카드번호가 1,2 이면 플레이어 핸드
+                         else retStr = _ChangeToPic(CommCard[iCardNum - 3]);                   // 요청 카드번호가 3,4,5,6,7이면 커뮤니티카드
+            return retStr;
         }
-        
+
+        // 플레이어카드 특정순서 1장 무늬만 요청,반환
+        public string GetCardPic(int iPlayerNum, int iCardNum)
+        {
+            return GetCard(iPlayerNum, iCardNum).Substring(0, 1);            
+        }
+
+        // 플레이어카드 특정순서 1장 숫자(10진수)만 요청,반환
+        public int GetCardValue(int iPlayerNum, int iCardNum)
+        {
+            int retInt = 0;
+            if (iCardNum < 3) retInt = _ChangeToNum(PlayerCard[iPlayerNum - 1, iCardNum - 1]); // 요청 카드번호가 1,2 이면 플레이어 핸드
+                         else retInt = _ChangeToNum(CommCard[iCardNum - 3]);                   // 요청 카드번호가 3,4,5,6,7이면 커뮤니티카드
+            return retInt;            
+        }           
 
         // 카드값(코드) 반환 > 내보내기 --------------------------------------------------------------------------
         public string GetCard(string strParam)
