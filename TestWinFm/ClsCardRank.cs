@@ -338,11 +338,11 @@ namespace TestWinFm
             {
                 if (SearchRank.IndexOf(RankInfo[iCnt, 0]) != -1)
                 {
-                    //RetRank = iCnt.ToString();
                     RetRank = RankInfo[iCnt, 1];
+                    RetRank = RetRank + iCnt.ToString();
                     break;
                 }
-            }            
+            }
             return RetRank;
         }
 
